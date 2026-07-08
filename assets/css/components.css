@@ -772,3 +772,223 @@
   min-width: 80px;
   text-align: right;
 }
+/* =============================================================
+   FOUNDER CARD & CONTRIBUTORS PLACEHOLDER
+   Used on: about.html
+   ============================================================= */
+
+.founder-card {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
+}
+
+.founder-card__photo {
+  flex: 0 0 200px;
+}
+
+.founder-card__photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent, #6d4aff);
+}
+
+.founder-card__bio {
+  flex: 1;
+  min-width: 280px;
+}
+
+.founder-card__name {
+  margin: 0 0 .25rem;
+  font-family: var(--font-serif, 'Noto Serif', serif);
+  font-size: 1.4rem;
+}
+
+.founder-card__role {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted, #666);
+  font-style: italic;
+}
+
+.founder-card__bio p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Responsive: stack photo above bio on narrow screens */
+@media (max-width: 560px) {
+  .founder-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder-card__photo {
+    flex: none;
+  }
+
+  .founder-card__bio {
+    text-align: left;
+  }
+}
+
+/* ---- Contributors placeholder ---- */
+
+.contributors-placeholder {
+  margin-top: var(--space-xxl);
+  padding: var(--space-lg);
+  border: 2px dashed var(--color-border, #ddd);
+  border-radius: var(--radius-md, 8px);
+  text-align: center;
+}
+
+.contributors-placeholder__title {
+  margin: 0 0 .5rem;
+  font-size: 1.15rem;
+}
+
+.contributors-placeholder__text {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted, #666);
+}
+
+
+/* =============================================================
+   CONTRIBUTE PAGE COMPONENTS
+   Used on: contribute.html
+   ============================================================= */
+
+/* Contribution method cards */
+
+.contribute-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.contribute-method {
+  background: var(--color-surface, #fff);
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: var(--radius-md, 8px);
+  padding: var(--space-md);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.contribute-method:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+  transform: translateY(-2px);
+}
+
+.contribute-method__icon {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-sm);
+}
+
+.contribute-method__title {
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contribute-method__desc {
+  margin: 0;
+  color: var(--color-text-muted, #666);
+  line-height: 1.6;
+  font-size: .95rem;
+}
+
+/* Steps timeline */
+
+.contribute-steps {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: var(--space-lg) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.contribute-steps__item {
+  counter-increment: step;
+  position: relative;
+  padding-left: 3.5rem;
+  padding-bottom: var(--space-md);
+  border-left: 2px solid var(--color-border, #ddd);
+  margin-left: 1rem;
+}
+
+.contribute-steps__item:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.contribute-steps__item::before {
+  content: counter(step);
+  position: absolute;
+  left: -1.25rem;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent, #6d4aff);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+.contribute-steps__title {
+  margin: 0 0 .35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.contribute-steps__desc {
+  margin: 0;
+  color: var(--color-text-muted, #666);
+  line-height: 1.6;
+}
+
+/* Form embed container */
+
+.contribute-form {
+  margin-top: var(--space-lg);
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+}
+
+.contribute-form iframe {
+  width: 100%;
+  border: 0;
+  min-height: 600px;
+}
+
+/* Contact fallback */
+
+.contribute-contact {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-surface-alt, #f8f6ff);
+  border-radius: var(--radius-md, 8px);
+  margin-top: var(--space-lg);
+}
+
+.contribute-contact__email {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-accent, #6d4aff);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contribute-contact__email:hover {
+  text-decoration: underline;
+}

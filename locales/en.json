@@ -372,4 +372,53 @@
     "contributeText": "Family or ceremony photos (with the consent of those pictured), folktales and proverbs, language corrections, audio recordings: every contribution is precious. Tell us in your message what you would like to share, and we will guide you step by step.",
     "socialTitle": "Social media"
   }
+  {
+  "about.founderSectionTitle": "Founder & Team",
+  "about.founderName": "Patrice \"Coco\" Nkomba",
+  "about.founderRole": "Founder & Editor",
+  "about.founderBio": "Coco Nkomba built tribubeti.org as an act of love and of historical urgency — because he understands, as all diaspora community members eventually understand, that distance is time's co-conspirator. Families scatter. Grandparents die. Languages thin to a few remembered phrases. The day arrives when a grandchild can no longer ask an elder what a proverb means.",
+  "about.contributorsTitle": "Community Contributors",
+  "about.contributorsText": "This project exists because of community members who share stories, songs, genealogies, and memories. Your voice belongs here.",
+  "about.contributorsCta": "Contribute to the project"
+}
+{
+  "nav.contribute": "Contribute",
+
+  "contribute.title": "Contribute to the Project",
+  "contribute.intro": "Your voice belongs here. Every story, every song, every lineage name is part of preserving our collective heritage.",
+  "contribute.whyTitle": "Why Contribute?",
+  "contribute.whyP1": "tribubeti.org is not a closed project. It is an open house — a space where the memory of our peoples gathers, intersects, and is passed on.",
+  "contribute.whyP2": "If you grew up listening to a story, if you know a song that few still remember, if you carry the name of your lineage — then this project needs you too.",
+  "contribute.methodsTitle": "How You Can Contribute",
+  "contribute.methodsIntro": "All forms of memory are welcome. Here is how you can participate:",
+  "contribute.methodStoriesTitle": "Stories & Oral Histories",
+  "contribute.methodStoriesDesc": "Origin myths, folktales, historical accounts, life testimonies. In French, Beti, Bulu, Ewondo, or Fang.",
+  "contribute.methodSongsTitle": "Songs & Music",
+  "contribute.methodSongsDesc": "Traditional songs, lullabies, mourning chants, war songs. Send an audio or video link, or written lyrics.",
+  "contribute.methodLineageTitle": "Genealogies & Lineages",
+  "contribute.methodLineageDesc": "Family trees, clan names, lineages, migrations. Help us map families and their journeys across time.",
+  "contribute.methodPhotosTitle": "Photos & Documents",
+  "contribute.methodPhotosDesc": "Old or recent photographs, letters, records, postcards. Each image is a fragment of memory.",
+  "contribute.methodProverbsTitle": "Proverbs & Expressions",
+  "contribute.methodProverbsDesc": "Proverbs, sayings, riddles, idiomatic expressions with their meaning and context of use.",
+  "contribute.methodCorrectionsTitle": "Corrections & Clarifications",
+  "contribute.methodCorrectionsDesc": "Spotted an error? An approximation? Write to us. Rigor is a form of respect.",
+  "contribute.howTitle": "How It Works",
+  "contribute.howIntro": "The process is simple and open to everyone.",
+  "contribute.step1Title": "Prepare Your Material",
+  "contribute.step1Desc": "Gather your texts, audio or video recordings, photos, or documents. Any format is accepted.",
+  "contribute.step2Title": "Fill Out the Form",
+  "contribute.step2Desc": "Use the form below. Describe what you're sharing, attach your files, and indicate whether you'd like to be credited.",
+  "contribute.step3Title": "Review & Integration",
+  "contribute.step3Desc": "Your contribution is reviewed, then integrated into the site in the appropriate language. We'll contact you if we have questions.",
+  "contribute.step4Title": "Publication & Credit",
+  "contribute.step4Desc": "Once published, your contribution appears on the site with your name (if you wish) in the contributors section.",
+  "contribute.formTitle": "Submit Your Contribution",
+  "contribute.formIntro": "Fill out the form below. All fields marked with an asterisk (*) are required.",
+  "contribute.contactFallback": "Prefer to write directly? Reach us at:",
+  "contribute.guidelinesTitle": "Contribution Guidelines",
+  "contribute.guidelinesP1": "Respect. Contributions must honor the people, families, and traditions referenced. No discriminatory content will be accepted.",
+  "contribute.guidelinesP2": "Authenticity. Indicate your sources: an elder consulted, a reference book, a lived experience. Traceability strengthens the project's credibility.",
+  "contribute.guidelinesP3": "Credit. Every contributor is acknowledged, unless anonymity is requested. You retain ownership of your contribution; tribubeti.org shares it in the spirit of collective preservation."
+}
 }

@@ -372,4 +372,53 @@
     "contributeText": "Photos de famille ou de cérémonie (avec l'accord des personnes), contes et proverbes, corrections linguistiques, enregistrements audio : toute contribution est précieuse. Précisez dans votre message ce que vous souhaitez partager, et nous vous guiderons pas à pas.",
     "socialTitle": "Réseaux sociaux"
   }
+  {
+  "about.founderSectionTitle": "Fondateur & équipe",
+  "about.founderName": "Patrice « Coco » Nkomba",
+  "about.founderRole": "Fondateur & éditeur",
+  "about.founderBio": "Coco Nkomba a créé tribubeti.org par amour et par urgence historique — parce qu'il comprend, comme tout membre de la diaspora finit par le comprendre, que la distance est complice du temps. Les familles se dispersent. Les grands-parents s'éteignent. Les langues s'amincissent jusqu'à quelques phrases retenues. Arrive le jour où un petit-enfant ne peut plus demander à un ancien ce que signifie un proverbe.",
+  "about.contributorsTitle": "Contributeurs communautaires",
+  "about.contributorsText": "Ce projet existe grâce aux membres de la communauté qui partagent récits, chansons, généalogies et souvenirs. Votre voix a sa place ici.",
+  "about.contributorsCta": "Contribuer au projet"
+}
+{
+  "nav.contribute": "Contribuer",
+
+  "contribute.title": "Contribuer au projet",
+  "contribute.intro": "Votre voix a sa place ici. Chaque récit, chaque chanson, chaque nom de lignée participe à la préservation de notre héritage collectif.",
+  "contribute.whyTitle": "Pourquoi contribuer ?",
+  "contribute.whyP1": "tribubeti.org n'est pas un projet fermé. C'est une maison ouverte — un espace où la mémoire de nos peuples se rassemble, se croise et se transmet.",
+  "contribute.whyP2": "Si vous avez grandi en écoutant un récit, si vous connaissez une chanson que peu de gens se souviennent encore, si vous portez le nom de votre lignée — alors ce projet a aussi besoin de vous.",
+  "contribute.methodsTitle": "Comment vous pouvez contribuer",
+  "contribute.methodsIntro": "Toutes les formes de mémoire sont les bienvenues. Voici comment vous pouvez participer :",
+  "contribute.methodStoriesTitle": "Récits & histoires orales",
+  "contribute.methodStoriesDesc": "Mythes fondateurs, contes, récits historiques, témoignages de vie. En français, en beti, en bulu, en ewondo ou en fang.",
+  "contribute.methodSongsTitle": "Chansons & musique",
+  "contribute.methodSongsDesc": "Chants traditionnels, berceuses, chants de deuil, chants de guerre. Envoyez un lien audio ou vidéo, ou un texte.",
+  "contribute.methodLineageTitle": "Généalogies & lignées",
+  "contribute.methodLineageDesc": "Arbres généalogiques, noms de clans, filiations, migrations. Aidez-nous à cartographier les familles et leurs parcours.",
+  "contribute.methodPhotosTitle": "Photos & documents",
+  "contribute.methodPhotosDesc": "Photographies anciennes ou récentes, lettres, actes, cartes postales. Chaque image est un fragment de mémoire.",
+  "contribute.methodProverbsTitle": "Proverbes & expressions",
+  "contribute.methodProverbsDesc": "Proverbes, dictons, devinettes, expressions idiomatiques avec leur signification et leur contexte d'usage.",
+  "contribute.methodCorrectionsTitle": "Corrections & précisions",
+  "contribute.methodCorrectionsDesc": "Vous avez repéré une erreur ? Une approximation ? Écrivez-nous. La rigueur est une forme de respect.",
+  "contribute.howTitle": "Comment ça marche",
+  "contribute.howIntro": "Le processus est simple et ouvert à tous.",
+  "contribute.step1Title": "Préparez votre matériel",
+  "contribute.step1Desc": "Rassemblez vos textes, enregistrements audio ou vidéo, photos ou documents. Tout format est accepté.",
+  "contribute.step2Title": "Remplissez le formulaire",
+  "contribute.step2Desc": "Utilisez le formulaire ci-dessous. Décrivez ce que vous partagez, ajoutez vos fichiers et indiquez si vous souhaitez être crédité.",
+  "contribute.step3Title": "Révision & intégration",
+  "contribute.step3Desc": "Votre contribution est examinée, puis intégrée au site dans la langue appropriée. Nous vous contacterons si nous avons des questions.",
+  "contribute.step4Title": "Publication & crédit",
+  "contribute.step4Desc": "Une fois publiée, votre contribution apparaît sur le site avec votre nom (si vous le souhaitez) dans la section des contributeurs.",
+  "contribute.formTitle": "Envoyez votre contribution",
+  "contribute.formIntro": "Remplissez le formulaire ci-dessous. Tous les champs marqués d'un astérisque (*) sont obligatoires.",
+  "contribute.contactFallback": "Vous préférez écrire directement ? Écrivez-nous à :",
+  "contribute.guidelinesTitle": "Charte de contribution",
+  "contribute.guidelinesP1": "Respect. Les contributions doivent honorer les personnes, les familles et les traditions évoquées. Aucun contenu discriminatoire ne sera accepté.",
+  "contribute.guidelinesP2": "Authenticité. Indiquez vos sources : un ancien consulté, un livre de référence, une expérience vécue. La traçabilité renforce la crédibilité du projet.",
+  "contribute.guidelinesP3": "Crédit. Chaque contributeur est mentionné, sauf demande d'anonymat. Vous restez propriétaire de votre contribution ; tribubeti.org la diffuse dans un esprit de préservation collective."
+}
 }
