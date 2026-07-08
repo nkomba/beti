@@ -92,7 +92,40 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="credits-title">
+    <!-- NEW SECTION: Founder & Team -->
+    <section class="section" aria-labelledby="founder-title">
+      <div class="container">
+        <h2 class="section-title" id="founder-title" data-i18n="about.founderSectionTitle">Fondateur &amp; équipe</h2>
+
+        <!-- Founder card with photo + bio -->
+        <div class="founder-card" style="display:flex; gap:var(--space-xl); align-items:flex-start; flex-wrap:wrap; margin-top:var(--space-lg);">
+          <div class="founder-card__photo" style="flex:0 0 200px;">
+            <img
+              src="/assets/img/founder-coco.jpg"
+              alt="Patrice « Coco » Nkomba"
+              width="200"
+              height="200"
+              loading="lazy"
+              style="width:200px; height:200px; object-fit:cover; border-radius:50%; border:3px solid var(--color-accent, #6d4aff);"
+            >
+          </div>
+          <div class="founder-card__bio" style="flex:1; min-width:280px;">
+            <h3 class="founder-card__name" data-i18n="about.founderName" style="margin:0 0 .25rem; font-family:var(--font-serif, 'Noto Serif', serif); font-size:1.4rem;">Patrice « Coco » Nkomba</h3>
+            <p class="founder-card__role" data-i18n="about.founderRole" style="margin:0 0 var(--space-md); color:var(--color-text-muted, #666); font-style:italic;">Fondateur &amp; éditeur</p>
+            <p data-i18n="about.founderBio"></p>
+          </div>
+        </div>
+
+        <!-- Contributors placeholder — visible signal that the project is open -->
+        <div class="contributors-placeholder" style="margin-top:var(--space-xxl); padding:var(--space-lg); border:2px dashed var(--color-border, #ddd); border-radius:var(--radius-md, 8px); text-align:center;">
+          <h3 class="contributors-placeholder__title" data-i18n="about.contributorsTitle" style="margin:0 0 .5rem; font-size:1.15rem;">Contributeurs communautaires</h3>
+          <p data-i18n="about.contributorsText" style="margin:0 0 var(--space-md); color:var(--color-text-muted, #666);"></p>
+          <a href="/pages/contribute.html" class="btn btn--primary" data-i18n="about.contributorsCta">Contribuer au projet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="credits-title">
       <div class="container">
         <h2 class="section-title" id="credits-title" data-i18n="about.creditsTitle">Crédits &amp; remerciements</h2>
         <p data-i18n="about.creditsText"></p>
