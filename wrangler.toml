@@ -1,0 +1,9 @@
+# Cloudflare Pages configuration for tribubeti.org
+# Static site — no build step. Deploy with:
+#   npx wrangler pages deploy . --project-name=tribubeti
+# Or connect the Git repository in the Cloudflare dashboard
+# (framework preset: None, build command: empty, output directory: /).
+
+name = "tribubeti"
+compatibility_date = "2026-07-07"
+pages_build_output_dir = "."

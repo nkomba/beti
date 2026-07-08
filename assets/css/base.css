@@ -1,0 +1,158 @@
+/* ==========================================================================
+   base.css — global element styles, typography, a11y helpers, print
+   ========================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--fs-2xl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+h4 { font-size: var(--fs-md); }
+
+p + p {
+  margin-top: var(--space-md);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Beti-language text — monospace to signal phonetic notation */
+.beti-text,
+[lang="ewo"],
+[lang="bum"],
+[lang="fan"],
+[lang="eto"] {
+  font-family: var(--font-beti);
+  font-style: normal;
+}
+
+/* Visible focus for keyboard users */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  z-index: 1000;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: var(--color-on-primary);
+}
+
+/* Screen-reader-only text */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Generic helpers */
+.text-center { text-align: center; }
+.text-light { color: var(--color-text-light); }
+
+.section-title {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 3px;
+  margin: var(--space-sm) auto 0;
+  background: var(--color-secondary);
+  border-radius: var(--radius-pill);
+}
+
+/* ==========================================================================
+   Print stylesheet — history, stories, learn-language content pages
+   ========================================================================== */
+@media print {
+  .site-header,
+  .site-footer,
+  .breadcrumb,
+  .btn,
+  .lang-switcher,
+  .theme-toggle,
+  .audio-player,
+  .lightbox,
+  .nav-drawer,
+  .quiz,
+  .newsletter,
+  .story__share {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  article,
+  .timeline__item,
+  .lesson-card {
+    page-break-inside: avoid;
+  }
+}

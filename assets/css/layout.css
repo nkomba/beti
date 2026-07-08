@@ -1,0 +1,386 @@
+/* ==========================================================================
+   layout.css — page scaffolding: header, nav, hero, sections, grids, footer
+   (mobile-first; desktop overrides live in responsive.css)
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+.section--alt {
+  background: var(--color-bg-alt);
+}
+
+/* --------------------------------------------------------------------------
+   Header & navigation
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  min-height: var(--header-height);
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.site-logo__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.nav-toggle__bar {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--color-text);
+  border-radius: var(--radius-pill);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile: slide-out drawer */
+.site-nav {
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  width: min(20rem, 85vw);
+  padding: var(--space-lg) var(--space-md);
+  background: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(100%);
+  transition: transform var(--transition-base);
+  overflow-y: auto;
+}
+
+.site-nav--open {
+  transform: translateX(0);
+}
+
+.site-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  list-style: none;
+}
+
+.site-nav__link {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+}
+
+.site-nav__link:hover {
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+}
+
+.site-nav__link[aria-current="page"] {
+  color: var(--color-primary);
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-secondary);
+}
+
+/* Sub-menu (mega-menu on desktop; nested list on mobile) */
+.site-nav__sub {
+  list-style: none;
+  padding-left: var(--space-md);
+}
+
+.site-nav__sub-link {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.site-nav__sub-link:hover {
+  color: var(--color-primary);
+  background: var(--color-bg-alt);
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(13, 74, 40, 0.55), rgba(20, 15, 8, 0.65));
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-xl) var(--space-md);
+  max-width: 45rem;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero__subtitle {
+  margin-top: var(--space-md);
+  font-size: var(--fs-md);
+  color: #f0ece4;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+/* Page hero (interior pages, smaller) */
+.page-hero {
+  padding: var(--space-xl) 0;
+  background: var(--color-primary-dark);
+  color: #f5f1e8;
+  text-align: center;
+}
+
+.page-hero__title {
+  color: #fff;
+}
+
+.page-hero__intro {
+  max-width: 42rem;
+  margin: var(--space-md) auto 0;
+  color: #e3dccb;
+}
+
+/* --------------------------------------------------------------------------
+   Grids
+   -------------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+/* Column counts applied at breakpoints in responsive.css */
+
+.two-col {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+/* --------------------------------------------------------------------------
+   Newsletter
+   -------------------------------------------------------------------------- */
+.newsletter {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.newsletter h2 {
+  color: var(--color-on-primary);
+}
+
+.newsletter__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.newsletter__input {
+  flex: 1 1 14rem;
+  max-width: 22rem;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  margin-top: var(--space-xl);
+  background: var(--color-primary-dark);
+  color: #d8d0bf;
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.site-footer a {
+  color: #d8d0bf;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-secondary-light);
+  text-decoration: underline;
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+.site-footer__title {
+  color: #fff;
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-sm);
+}
+
+.site-footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.site-footer__social {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.site-footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(216, 208, 191, 0.4);
+  border-radius: 50%;
+}
+
+.site-footer__bottom {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(216, 208, 191, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  font-size: var(--fs-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Language map (SVG)
+   -------------------------------------------------------------------------- */
+.lang-map {
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+.lang-map__legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  font-size: var(--fs-sm);
+  list-style: none;
+}
+
+.lang-map__swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 3px;
+  margin-right: 0.35rem;
+  vertical-align: -0.1em;
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Audio registry — keys map to data-audio-key attributes. An empty 'src' shows a localized 'Audio coming soon' message. To activate a track, drop the MP3 into the right folder and fill in 'src', e.g. /assets/audio/mvett/track01.mp3. See README.md §5. A 'youtube' field embeds a YouTube video instead.",
+
+  "mvett-01": { "src": "", "youtube": "13w6XAM1slA", "title": "Mvett — extrait 1 / excerpt 1", "folder": "mvett", "suggestedFile": "track01.mp3" },
+  "mvett-02": { "src": "", "title": "Récit de mvett / Mvett narration", "folder": "mvett", "suggestedFile": "track02.mp3" },
+  "drums-01": { "src": "", "youtube": "jtomTLJdyZc", "title": "Tambours traditionnels / Traditional drums", "folder": "drums", "suggestedFile": "track01.mp3" },
+  "song-01": { "src": "", "youtube": "obC7ARVmMac", "title": "Chant traditionnel / Traditional song", "folder": "songs", "suggestedFile": "track01.mp3" },
+
+  "story-01": { "src": "", "title": "Kulu la tortue — narration", "folder": "songs", "suggestedFile": "story01.mp3" },
+  "story-02": { "src": "", "title": "La panthère — narration", "folder": "songs", "suggestedFile": "story02.mp3" },
+  "story-03": { "src": "", "title": "Beme Ndongo — narration", "folder": "songs", "suggestedFile": "story03.mp3" },
+  "story-04": { "src": "", "title": "Aux portes d'Engong — narration", "folder": "songs", "suggestedFile": "story04.mp3" }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apprendre l'ewondo | Tribu Beti — Héritage &amp; Culture</title>
+  <meta name="description" content="Leçons interactives d'ewondo : salutations, nombres, famille, phrases du quotidien, proverbes, animaux, nourriture. Avec quiz et suivi de progression.">
+  <link rel="canonical" href="https://tribubeti.org/pages/learn-language.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Apprendre l'ewondo">
+  <meta property="og:description" content="Leçons interactives et quiz pour apprendre les langues beti.">
+  <meta property="og:url" content="https://tribubeti.org/pages/learn-language.html">
+  <meta property="og:image" content="https://picsum.photos/seed/village-talk/1200/630">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Leçons interactives d'ewondo",
+    "url": "https://tribubeti.org/pages/learn-language.html",
+    "inLanguage": ["fr", "en"],
+    "teaches": "Langue ewondo (langues beti du Cameroun)"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Aller au contenu principal</a>
+  <header class="site-header" id="header"></header>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" data-i18n-aria-label="a11y.breadcrumb">
+      <ol>
+        <li><a href="/index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/pages/languages.html" data-i18n="nav.languages">Langues</a></li>
+        <li><span aria-current="page" data-i18n="nav.learn">Apprendre</span></li>
+      </ol>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title" data-i18n="learn.title">Apprendre l'ewondo</h1>
+        <p class="page-hero__intro" data-i18n="learn.intro"></p>
+      </div>
+    </section>
+
+    <!-- Progress + phrase of the day -->
+    <section class="section" aria-labelledby="progress-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="progress-title" data-i18n="learn.progressTitle">Votre progression</h2>
+          <p data-progress-label style="margin:var(--space-sm) 0">0 / 7 — 0%</p>
+          <div class="progress-bar" role="progressbar" aria-labelledby="progress-title" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar__fill"></div>
+          </div>
+        </div>
+        <aside class="word-of-day" data-phrase-of-day aria-labelledby="pod-title">
+          <h2 id="pod-title" data-i18n="learn.phraseOfDayTitle">La phrase du jour</h2>
+          <p class="word-of-day__word beti-text" lang="ewo"></p>
+          <p class="word-of-day__phonetic beti-text"></p>
+          <p class="word-of-day__translation"></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Lesson categories (cards rendered by lessons.js) -->
+    <section class="section section--alt" aria-labelledby="lessons-title">
+      <div class="container">
+        <h2 class="section-title" id="lessons-title" data-i18n="learn.title">Apprendre l'ewondo</h2>
+
+        <!-- VERIFY: all Ewondo phrases and tones in assets/js/lessons.js should be reviewed by native speakers. -->
+        <div class="accordion">
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="true" aria-controls="cat-greetings">
+                <span data-i18n="learn.catGreetings">Salutations</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-greetings">
+              <div class="grid grid--2" data-lesson-list="greetings" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="greetings" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="cat-numbers">
+                <span data-i18n="learn.catNumbers">Nombres</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-numbers" hidden>
+              <div class="grid grid--2" data-lesson-list="numbers" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="numbers" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="cat-family">
+                <span data-i18n="learn.catFamily">La famille</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-family" hidden>
+              <div class="grid grid--2" data-lesson-list="family" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="family" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="cat-phrases">
+                <span data-i18n="learn.catPhrases">Phrases du quotidien</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-phrases" hidden>
+              <div class="grid grid--2" data-lesson-list="phrases" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="phrases" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="cat-proverbs">
+                <span data-i18n="learn.catProverbs">Proverbes</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-proverbs" hidden>
+              <div class="grid grid--2" data-lesson-list="proverbs" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="proverbs" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="cat-animals">
+                <span data-i18n="learn.catAnimals">Animaux</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-animals" hidden>
+              <div class="grid grid--2" data-lesson-list="animals" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="animals" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="cat-food">
+                <span data-i18n="learn.catFood">Nourriture</span>
+                <span class="accordion__icon" aria-hidden="true">▾</span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="cat-food" hidden>
+              <div class="grid grid--2" data-lesson-list="food" style="margin-bottom:var(--space-md)"></div>
+              <button class="btn btn--ghost btn--sm" type="button" data-complete="food" data-i18n="learn.markComplete">Marquer comme terminé</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="section" aria-labelledby="quiz-title">
+      <div class="container" style="max-width:38rem">
+        <h2 class="section-title" id="quiz-title" data-i18n="learn.quizTitle">Quiz : testez-vous !</h2>
+        <p class="text-center" data-i18n="learn.quizIntro"></p>
+        <p class="text-center" style="margin:var(--space-md) 0">
+          <button class="btn btn--primary" type="button" data-quiz-start data-i18n="learn.quizStart">Commencer le quiz</button>
+        </p>
+        <div class="quiz" data-quiz aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer"></footer>
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/lessons.js"></script>
+</body>
+</html>

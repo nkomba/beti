@@ -1,0 +1,155 @@
+/* ==========================================================================
+   responsive.css — mobile-first breakpoints: 600px, 900px, 1200px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   ≥ 600px — small tablets
+   -------------------------------------------------------------------------- */
+@media (min-width: 600px) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ≥ 900px — desktop: inline nav with mega-menu, horizontal timeline
+   -------------------------------------------------------------------------- */
+@media (min-width: 900px) {
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Nav becomes inline; hide hamburger */
+  .nav-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    position: static;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transform: none;
+    overflow: visible;
+  }
+
+  .site-nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  .site-nav__item {
+    position: relative;
+  }
+
+  .site-nav__link {
+    padding: var(--space-sm) 0.7rem;
+    white-space: nowrap;
+  }
+
+  .site-nav__link[aria-current="page"] {
+    border-left: none;
+    border-bottom: 3px solid var(--color-secondary);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  /* Mega-menu dropdown */
+  .site-nav__sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    min-width: 14rem;
+    padding: var(--space-sm);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.5rem);
+    transition: opacity var(--transition-fast), transform var(--transition-fast),
+      visibility var(--transition-fast);
+  }
+
+  .site-nav__item:hover > .site-nav__sub,
+  .site-nav__item:focus-within > .site-nav__sub {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .site-nav__sub-link {
+    font-size: var(--fs-base);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  /* Timeline: horizontal scroll strip */
+  .timeline--horizontal {
+    display: flex;
+    gap: var(--space-lg);
+    overflow-x: auto;
+    padding: var(--space-lg) var(--space-sm) var(--space-md);
+    scroll-snap-type: x mandatory;
+  }
+
+  .timeline--horizontal::before {
+    top: 0.35rem;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 3px;
+  }
+
+  .timeline--horizontal .timeline__item {
+    flex: 0 0 20rem;
+    margin-bottom: 0;
+    scroll-snap-align: start;
+  }
+
+  .timeline--horizontal .timeline__item::before {
+    left: 0;
+    top: -1.35rem;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ≥ 1200px — wide desktop
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero {
+    min-height: 78vh;
+  }
+
+  .site-nav__link {
+    padding-inline: var(--space-md);
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_comment": "Image registry — swap a picsum placeholder for a real photo by changing 'src' to a local path, e.g. /assets/img/regions/01-centre-region.jpg. See README.md §4. Keys map to data-image-key attributes in the HTML.",
+
+  "hero-forest": { "src": "https://picsum.photos/seed/forest-cameroon/1600/800", "folder": "hero", "suggestedFile": "01-forest-hero.jpg" },
+
+  "home-history": { "src": "https://picsum.photos/seed/hills-centre/640/400", "folder": "regions", "suggestedFile": "01-centre-hills.jpg" },
+  "home-languages": { "src": "https://picsum.photos/seed/village-talk/640/400", "folder": "daily-life", "suggestedFile": "01-conversation.jpg" },
+  "home-traditions": { "src": "https://picsum.photos/seed/drums-ceremony/640/400", "folder": "ceremonies", "suggestedFile": "01-drums.jpg" },
+  "home-featured-story": { "src": "https://picsum.photos/seed/forest-path-dusk/640/400", "folder": "regions", "suggestedFile": "02-forest-path.jpg" },
+
+  "history-bantu": { "src": "https://picsum.photos/seed/bantu-migration/640/360", "folder": "regions", "suggestedFile": "03-migration-map.jpg" },
+  "history-sanaga": { "src": "https://picsum.photos/seed/sanaga-river/640/360", "folder": "regions", "suggestedFile": "04-sanaga-river.jpg" },
+  "history-precolonial": { "src": "https://picsum.photos/seed/village-court/640/360", "folder": "daily-life", "suggestedFile": "02-village-court.jpg" },
+  "history-german": { "src": "https://picsum.photos/seed/colonial-building/640/360", "folder": "regions", "suggestedFile": "05-colonial-building.jpg" },
+  "history-mandate": { "src": "https://picsum.photos/seed/cocoa-plantation/640/360", "folder": "daily-life", "suggestedFile": "03-cocoa-plantation.jpg" },
+  "history-figures": { "src": "https://picsum.photos/seed/historic-portrait/640/360", "folder": "portraits", "suggestedFile": "01-historic-portrait.jpg" },
+  "history-independence": { "src": "https://picsum.photos/seed/yaounde-city/640/360", "folder": "regions", "suggestedFile": "06-yaounde.jpg" },
+
+  "traditions-music": { "src": "https://picsum.photos/seed/string-instrument/640/420", "folder": "ceremonies", "suggestedFile": "02-mvett-player.jpg" },
+  "traditions-dance": { "src": "https://picsum.photos/seed/village-dance/640/420", "folder": "ceremonies", "suggestedFile": "03-dance.jpg" },
+  "traditions-epics": { "src": "https://picsum.photos/seed/storyteller-fire/640/420", "folder": "ceremonies", "suggestedFile": "04-storyteller.jpg" },
+  "traditions-beliefs": { "src": "https://picsum.photos/seed/misty-forest/640/420", "folder": "regions", "suggestedFile": "07-sacred-forest.jpg" },
+  "traditions-rites": { "src": "https://picsum.photos/seed/ceremony-family/640/420", "folder": "ceremonies", "suggestedFile": "05-family-ceremony.jpg" },
+
+  "game-wrestling": { "src": "https://picsum.photos/seed/wrestling-crowd/640/400", "folder": "ceremonies", "suggestedFile": "06-wrestling.jpg" },
+  "game-songo": { "src": "https://picsum.photos/seed/songo-board/640/400", "folder": "daily-life", "suggestedFile": "04-songo-board.jpg" },
+  "game-abbia": { "src": "https://picsum.photos/seed/carved-chips/640/400", "folder": "daily-life", "suggestedFile": "05-abbia-chips.jpg" },
+  "game-children": { "src": "https://picsum.photos/seed/children-sunset/640/400", "folder": "daily-life", "suggestedFile": "06-children-games.jpg" },
+
+  "gallery-region-01": { "src": "https://picsum.photos/seed/hills-centre/480/360", "folder": "regions", "suggestedFile": "01-centre-hills.jpg" },
+  "gallery-region-02": { "src": "https://picsum.photos/seed/south-forest/480/360", "folder": "regions", "suggestedFile": "08-south-forest.jpg" },
+  "gallery-region-03": { "src": "https://picsum.photos/seed/sanaga-morning/480/360", "folder": "regions", "suggestedFile": "09-sanaga-morning.jpg" },
+  "gallery-region-04": { "src": "https://picsum.photos/seed/forest-village/480/360", "folder": "regions", "suggestedFile": "10-forest-village.jpg" },
+  "gallery-daily-01": { "src": "https://picsum.photos/seed/market-stall/480/360", "folder": "daily-life", "suggestedFile": "07-market.jpg" },
+  "gallery-daily-02": { "src": "https://picsum.photos/seed/cooking-fire/480/360", "folder": "daily-life", "suggestedFile": "08-cooking.jpg" },
+  "gallery-daily-03": { "src": "https://picsum.photos/seed/cocoa-pod/480/360", "folder": "daily-life", "suggestedFile": "09-cocoa-pod.jpg" },
+  "gallery-daily-04": { "src": "https://picsum.photos/seed/basket-weaving/480/360", "folder": "daily-life", "suggestedFile": "10-basket-weaving.jpg" },
+  "gallery-ceremony-01": { "src": "https://picsum.photos/seed/raffia-dancers/480/360", "folder": "ceremonies", "suggestedFile": "07-raffia-dancers.jpg" },
+  "gallery-ceremony-02": { "src": "https://picsum.photos/seed/wedding-custom/480/360", "folder": "ceremonies", "suggestedFile": "08-wedding.jpg" },
+  "gallery-portrait-01": { "src": "https://picsum.photos/seed/elder-portrait/480/360", "folder": "portraits", "suggestedFile": "02-elder.jpg" },
+  "gallery-portrait-02": { "src": "https://picsum.photos/seed/young-woman/480/360", "folder": "portraits", "suggestedFile": "03-young-woman.jpg" }
+}

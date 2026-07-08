@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie | Tribu Beti — Héritage &amp; Culture</title>
+  <meta name="description" content="Galerie photo du pays beti : régions du Centre et du Sud, vie quotidienne, cérémonies et portraits.">
+  <link rel="canonical" href="https://tribubeti.org/pages/gallery.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galerie | Tribu Beti">
+  <meta property="og:description" content="Paysages, vie quotidienne, cérémonies et visages du pays beti.">
+  <meta property="og:url" content="https://tribubeti.org/pages/gallery.html">
+  <meta property="og:image" content="/assets/img/kids-playing">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Galerie du pays beti",
+    "url": "https://tribubeti.org/pages/gallery.html",
+    "inLanguage": ["fr", "en"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Aller au contenu principal</a>
+  <header class="site-header" id="header"></header>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane" data-i18n-aria-label="a11y.breadcrumb">
+      <ol>
+        <li><a href="/index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><span aria-current="page" data-i18n="nav.gallery">Galerie</span></li>
+      </ol>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title" data-i18n="gallery.title">Galerie</h1>
+        <p class="page-hero__intro" data-i18n="gallery.intro"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filters -->
+        <div class="gallery__filters" role="group" aria-label="Filtres de la galerie">
+          <button class="btn btn--primary btn--sm" type="button" data-filter="all" aria-pressed="true" data-i18n="gallery.filterAll">Tout</button>
+          <button class="btn btn--ghost btn--sm" type="button" data-filter="regions" aria-pressed="false" data-i18n="gallery.filterRegions">Régions</button>
+          <button class="btn btn--ghost btn--sm" type="button" data-filter="daily-life" aria-pressed="false" data-i18n="gallery.filterDaily">Vie quotidienne</button>
+          <button class="btn btn--ghost btn--sm" type="button" data-filter="ceremonies" aria-pressed="false" data-i18n="gallery.filterCeremonies">Cérémonies</button>
+          <button class="btn btn--ghost btn--sm" type="button" data-filter="portraits" aria-pressed="false" data-i18n="gallery.filterPortraits">Portraits</button>
+        </div>
+
+        <!-- Grid — real photos will replace picsum placeholders via /assets/img/registry.json -->
+        <div class="gallery__grid">
+          <button class="gallery__item" type="button" data-category="regions">
+            <img data-image-key="gallery-region-01"
+                 src="/assets/img/young-women.jpg"
+                 srcset="/assets/img/young-women.jpg, /assets/img/young-women.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/hills-centre/1400/1050"
+                 alt="" data-i18n-alt="gallery.g1Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="regions">
+            <img data-image-key="gallery-region-02"
+                 src="/assets/img/forest-green.jpg"
+                 srcset="/assets/img/forest-green.jpg, /assets/img/forest-green.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/south-forest/1400/1050"
+                 alt="" data-i18n-alt="gallery.g2Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="regions">
+            <img data-image-key="gallery-region-03"
+                 src="/assets/img/sanaga.jpg"
+                 srcset="/assets/img/sanaga.jpg, /assets/img/sanaga.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/sanaga-morning/1400/1050"
+                 alt="" data-i18n-alt="gallery.g3Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="regions">
+            <img data-image-key="gallery-region-04"
+                 src="/assets/img/forest-village.jpg"
+                 srcset="/assets/img/forest-village.jpg, /assets/img/forest-village.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/forest-village/1400/1050"
+                 alt="" data-i18n-alt="gallery.g4Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="daily-life">
+            <img data-image-key="gallery-daily-01"
+                 src="/assets/img/market.jpg"
+                 srcset="/assets/img/market.jpg, /assets/img/market.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/market-stall/1400/1050"
+                 alt="" data-i18n-alt="gallery.g5Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="daily-life">
+            <img data-image-key="gallery-daily-02"
+                 src="/assets/img/ceremony.jpg"
+                 srcset="/assets/img/ceremony.jpg, /assets/img/ceremony.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/cooking-fire/1400/1050"
+                 alt="" data-i18n-alt="gallery.g6Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="daily-life">
+            <img data-image-key="gallery-daily-03"
+                 src="/assets/img/ebolowa.jpg"
+                 srcset="/assets/img/ebolowa.jpg, /assets/img/ebolowa.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/cocoa-pod/1400/1050"
+                 alt="" data-i18n-alt="gallery.g7Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="daily-life">
+            <img data-image-key="gallery-daily-04"
+                 src="/assets/img/ebolowa-city.jpg"
+                 srcset="/assets/img/ebolowa-city.jpg, /assets/img/ebolowa-city.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/basket-weaving/1400/1050"
+                 alt="" data-i18n-alt="gallery.g8Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="ceremonies">
+            <img data-image-key="gallery-ceremony-01"
+                 src="/assets/img/church.jpg"
+                 srcset="/assets/img/church.jpg, /assets/img/church.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/raffia-dancers/1400/1050"
+                 alt="" data-i18n-alt="gallery.g9Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="ceremonies">
+            <img data-image-key="gallery-ceremony-02"
+                 src="/assets/img/food.jpg"
+                 srcset="/assets/img/food.jpg, /assets/img/food.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/wedding-custom/1400/1050"
+                 alt="" data-i18n-alt="gallery.g10Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="portraits">
+            <img data-image-key="gallery-portrait-01"
+                 src="/assets/img/rafia.jpg"
+                 srcset="/assets/img/rafia.jpg, /assets/img/rafia.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/elder-portrait/1400/1050"
+                 alt="" data-i18n-alt="gallery.g11Alt" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-category="portraits">
+            <img data-image-key="gallery-portrait-02"
+                 src="/assets/img/okok.jpg"
+                 srcset="/assets/img/okok.jpg, /assets/img/okok.jpg"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 900px) 33vw, 100vw"
+                 data-full="https://picsum.photos/seed/young-woman/1400/1050"
+                 alt="" data-i18n-alt="gallery.g12Alt" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'images" hidden>
+      <button class="lightbox__close" type="button" aria-label="Fermer">✕</button>
+      <button class="lightbox__prev" type="button" aria-label="Précédent">‹</button>
+      <img class="lightbox__img" src="" alt="">
+      <button class="lightbox__next" type="button" aria-label="Suivant">›</button>
+      <p class="lightbox__caption"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="footer"></footer>
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/gallery.js"></script>
+</body>
+</html>

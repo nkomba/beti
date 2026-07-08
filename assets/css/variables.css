@@ -1,0 +1,78 @@
+/* ==========================================================================
+   variables.css — design tokens (light + dark themes)
+   ========================================================================== */
+
+:root {
+  /* Colors — light theme */
+  --color-primary: #1a6b3c;        /* Forest green — Cameroon's lush landscape */
+  --color-primary-dark: #0d4a28;
+  --color-secondary: #c9a227;      /* Gold — regalia, ornaments */
+  --color-secondary-light: #e8c84a;
+  --color-accent: #d4422e;         /* Terracotta red — earth, pottery */
+  --color-bg: #faf8f4;             /* Warm off-white */
+  --color-bg-alt: #f0ece4;         /* Slightly darker sections */
+  --color-text: #2c2418;           /* Deep brown-black */
+  --color-text-light: #6b5d4f;
+  --color-border: #d6cec0;
+  --color-white: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-surface: #ffffff;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(44, 36, 24, 0.08);
+  --shadow-md: 0 4px 12px rgba(44, 36, 24, 0.12);
+  --shadow-lg: 0 8px 24px rgba(44, 36, 24, 0.16);
+
+  /* Typography */
+  --font-heading: "Noto Serif", georgia, serif;
+  --font-body: "Noto Sans", system-ui, -apple-system, sans-serif;
+  --font-beti: "Noto Sans Mono", ui-monospace, "Courier New", monospace;
+
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 3rem;
+
+  /* Spacing scale (1rem = 16px) */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Layout */
+  --container-max: 72rem;
+  --header-height: 4rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* Dark theme — warm browns and deep greens, not pure black */
+[data-theme="dark"] {
+  --color-primary: #3fa168;
+  --color-primary-dark: #2c7a4d;
+  --color-secondary: #d9b53f;
+  --color-secondary-light: #e8c84a;
+  --color-accent: #e0604e;
+  --color-bg: #1c1712;
+  --color-bg-alt: #262019;
+  --color-text: #efe8dc;
+  --color-text-light: #b5a894;
+  --color-border: #443a2e;
+  --color-white: #efe8dc;
+  --color-on-primary: #10130f;
+  --color-surface: #2b241c;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+}

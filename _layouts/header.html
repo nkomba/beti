@@ -1,0 +1,67 @@
+<!-- Shared header fragment — injected into <header id="header"> by main.js -->
+<div class="container site-header__inner">
+  <a class="site-logo" href="/index.html">
+    <span class="site-logo__mark" aria-hidden="true">TB</span>
+    <span>Tribu Beti</span>
+  </a>
+
+  <nav class="site-nav" id="site-nav" aria-label="Navigation principale" data-i18n-aria-label="a11y.mainNav">
+    <ul class="site-nav__list">
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/index.html" data-i18n="nav.home">Accueil</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/history.html" data-i18n="nav.history">Histoire</a>
+        <ul class="site-nav__sub">
+          <li><a class="site-nav__sub-link" href="/pages/history.html#timeline" data-i18n="navSub.historyTimeline">Chronologie</a></li>
+          <li><a class="site-nav__sub-link" href="/pages/history.html#clans" data-i18n="navSub.historyClans">Clans &amp; généalogie</a></li>
+        </ul>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/languages.html" data-i18n="nav.languages">Langues</a>
+        <ul class="site-nav__sub">
+          <li><a class="site-nav__sub-link" href="/pages/languages.html" data-i18n="navSub.languagesHub">Nos langues</a></li>
+          <li><a class="site-nav__sub-link" href="/pages/learn-language.html" data-i18n="navSub.languagesLearn">Leçons interactives</a></li>
+        </ul>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/traditions.html" data-i18n="nav.traditions">Traditions</a>
+        <ul class="site-nav__sub">
+          <li><a class="site-nav__sub-link" href="/pages/traditions.html#panel-music" data-i18n="navSub.traditionsMusic">Musique</a></li>
+          <li><a class="site-nav__sub-link" href="/pages/traditions.html#panel-dance" data-i18n="navSub.traditionsDance">Danse</a></li>
+          <li><a class="site-nav__sub-link" href="/pages/traditions.html#panel-epics" data-i18n="navSub.traditionsEpics">Épopées orales (Mvett)</a></li>
+          <li><a class="site-nav__sub-link" href="/pages/traditions.html#panel-beliefs" data-i18n="navSub.traditionsBeliefs">Croyances &amp; spiritualité</a></li>
+          <li><a class="site-nav__sub-link" href="/pages/traditions.html#panel-rites" data-i18n="navSub.traditionsRites">Rites de passage</a></li>
+        </ul>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/games.html" data-i18n="nav.games">Jeux</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/gallery.html" data-i18n="nav.gallery">Galerie</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/stories.html" data-i18n="nav.stories">Contes</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/about.html" data-i18n="nav.about">À propos</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="/pages/contact.html" data-i18n="nav.contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="site-header__actions">
+    <div class="lang-switcher" role="group" aria-label="Choix de la langue du site" data-i18n-aria-label="a11y.langSwitcher">
+      <button class="lang-switcher__btn" type="button" data-lang="fr" aria-pressed="true" lang="fr">FR</button>
+      <button class="lang-switcher__btn" type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="Activer le thème sombre" data-i18n-aria-label="a11y.themeDark">☾</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu" data-i18n-aria-label="a11y.openMenu">
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
