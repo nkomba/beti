@@ -98,30 +98,68 @@
         <h2 class="section-title" id="founder-title" data-i18n="about.founderSectionTitle">Fondateur &amp; équipe</h2>
 
         <!-- Founder card with photo + bio -->
-        <div class="founder-card" style="display:flex; gap:var(--space-xl); align-items:flex-start; flex-wrap:wrap; margin-top:var(--space-lg);">
-          <div class="founder-card__photo" style="flex:0 0 200px;">
+<!-- Replace the entire founder + contributors block with: -->
+<div class="founder-card">
+  <div class="founder-card__photo">
+    <img
+      src="/assets/img/founder-coco.jpg"
+      alt="Patrice « Coco » Nkomba"
+      width="200"
+      height="200"
+      loading="lazy"
+    >
+  </div>
+  <div class="founder-card__bio">
+    <h3 class="founder-card__name" data-i18n="about.founderName">Patrice « Coco » Nkomba</h3>
+    <p class="founder-card__role" data-i18n="about.founderRole">Fondateur &amp; éditeur</p>
+    <p data-i18n="about.founderBio"></p>
+  </div>
+</div>
+
+    <!-- ===================== Contributors ===================== -->
+    <section id="view-contributors" class="view section" aria-labelledby="contrib-title">
+      <div class="wrap">
+        <p class="kicker" data-i18n="contributors.kicker">The collective</p>
+        <h1 id="contrib-title" data-i18n="contributors.title">Contributors</h1>
+        <p class="lead" data-i18n="contributors.lead"></p>
+
+        <div class="prose mt-4">
+          <h2 data-i18n="contributors.inviteTitle">An open invitation</h2>
+          <p data-i18n="contributors.inviteBody"></p>
+        </div>
+
+        <!-- Founding editor (always at top, distinct from community grid) -->
+        <div class="founder-strip">
+          <div class="founder-strip__avatar">
             <img
-              src="/assets/img/founder-coco.jpg"
-              alt="Patrice « Coco » Nkomba"
-              width="200"
-              height="200"
-              loading="lazy"
-              style="width:200px; height:200px; object-fit:cover; border-radius:50%; border:3px solid var(--color-accent, #6d4aff);"
+              src="assets/img/founder-coco.jpg"
+              alt="Patrice “Coco” Nkomba"
+              width="72" height="72" loading="lazy"
             >
           </div>
-          <div class="founder-card__bio" style="flex:1; min-width:280px;">
-            <h3 class="founder-card__name" data-i18n="about.founderName" style="margin:0 0 .25rem; font-family:var(--font-serif, 'Noto Serif', serif); font-size:1.4rem;">Patrice « Coco » Nkomba</h3>
-            <p class="founder-card__role" data-i18n="about.founderRole" style="margin:0 0 var(--space-md); color:var(--color-text-muted, #666); font-style:italic;">Fondateur &amp; éditeur</p>
-            <p data-i18n="about.founderBio"></p>
+          <div class="founder-strip__info">
+            <span class="founder-strip__badge" data-i18n="contributors.founderBadge">Founding Editor</span>
+            <h3 class="founder-strip__name" data-i18n="about.founderName">Patrice “Coco” Nkomba</h3>
+            <p class="founder-strip__desc" data-i18n="contributors.founderDesc"></p>
           </div>
         </div>
 
-        <!-- Contributors placeholder — visible signal that the project is open -->
-        <div class="contributors-placeholder" style="margin-top:var(--space-xxl); padding:var(--space-lg); border:2px dashed var(--color-border, #ddd); border-radius:var(--radius-md, 8px); text-align:center;">
-          <h3 class="contributors-placeholder__title" data-i18n="about.contributorsTitle" style="margin:0 0 .5rem; font-size:1.15rem;">Contributeurs communautaires</h3>
-          <p data-i18n="about.contributorsText" style="margin:0 0 var(--space-md); color:var(--color-text-muted, #666);"></p>
-          <a href="/pages/contribute.html" class="btn btn--primary" data-i18n="about.contributorsCta">Contribuer au projet</a>
+        <!-- Community contributors -->
+        <h2 class="mt-4" data-i18n="contributors.communityTitle">Community Contributors</h2>
+        <div id="contrib-grid" class="contrib-grid"></div>
+
+        <div class="contributors-empty" id="contrib-empty">
+          <p data-i18n="contributors.emptyState"></p>
+          <a class="btn btn-ghost" href="mailto:contributions@camerounhistoire.org" data-i18n="contributors.emptyCta">Become the first contributor</a>
         </div>
+
+        <h2 class="mt-4" data-i18n="contributors.workflowTitle">How to contribute</h2>
+        <ol id="workflow-list" class="workflow"></ol>
+
+        <h2 class="mt-4" data-i18n="contributors.codeTitle">Code of historical responsibility</h2>
+        <ol id="code-list" class="code-list"></ol>
+      </div>
+    </section>
       </div>
     </section>
 
